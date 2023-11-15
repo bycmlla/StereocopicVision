@@ -24,8 +24,8 @@ stereo = cv.StereoSGBM_create(
     P1=P1,
     P2=P2
 )
-imgL = cv.imread("Testesdevisãoestéreo\assets\images\right\all_light_left.png")
-imgR = cv.imread("Testesdevisãoestéreo\assets\images\right\all_light_right.png")
+imgL = cv.imread("./assets/images/all_light_left.png")
+imgR = cv.imread("./assets/images/all_light_right.png")
 
 disparity = stereo.compute(imgL, imgR).astype(np.float32) / 16.0
 

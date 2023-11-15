@@ -3,8 +3,8 @@ import os
 import cv2 as cv
 from matplotlib import pyplot as plt
 
-imgleft = '/home/aluno/Downloads/stereoscopic/assets/lef2t.jpg'
-imgright = '/home/aluno/Downloads/stereoscopic/assets/right.jpg'
+imgleft = './assets/images/all_light_left.png'
+imgright = './assets/images/all_light_right.png'
 
 if os.path.isfile(imgleft):
     print("A imagem foi lida com sucesso!")
